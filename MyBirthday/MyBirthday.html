@@ -63,9 +63,9 @@
                     <h1 onclick="showMessage()" class="avatar__title">Hà Ngọc</h1>
                 </div>
 <!--                <audio id="my_audio" src="./2.mp3" loop="loop" allow="autoplay"></audio>-->
-                <audio id="my_audio" controls hidden>
-                    <source src="./2.mp3" type="audio/mpeg"></source>
-                    <source src="./2.mp3" type="audio/ogg"></source>
+                <audio id="my_audio" preload="auto" controls hidden>
+                    <source src="https://www.youtube.com/watch?v=xslGs5oF3eA3" type="audio/mpeg"></source>
+                    <source src="https://www.youtube.com/watch?v=xslGs5oF3eA" type="audio/ogg"></source>
                 </audio>
             </div>
         </div>
@@ -82,9 +82,10 @@
                     },
                 });
             }
-            window.onload = function() {
-                document.getElementById("my_audio").play();
-            }
+            // window.onload = function() {
+            //     document.getElementById("my_audio").play();
+            // }
+
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
